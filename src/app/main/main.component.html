@@ -1,0 +1,33 @@
+<div class="container info">
+  <form action="?" method="post">
+    <input type="text" name="player1" placeholder="player1" #player1>
+    <label for="robot1">Robot:</label>
+    <input type="checkbox" name="robot" id="robot1">
+    <br>
+    <input type="text" name="player2" placeholder="player2" #player2>
+    <label for="robot1">Robot:</label>
+    <input type="checkbox" name="robot" id="robot2"><br><br>
+    <input type="button" value="Start game" class="btn btn-outline-primary" (click)="startGame($event)">
+    <input type="button" value="Cancel game" class="btn btn-outline-primary" (click)="resetAll()">
+    <input type="button" value="Save game" class="btn btn-outline-primary" (click)="saveResults()">
+  </form>
+</div>
+<div class="container gameMain">
+  <div class="result"><span>{{player1Name}}</span><span>{{player1Result}}</span><span>:</span><span>{{player2Result}}</span><span>{{player2Name}}</span></div>
+  <div class="container overTable" #overTable></div>
+  <div class="container gameTable" (click)="putPiece($event)">
+    <div id="field1"></div>
+    <div id="field2"></div>
+    <div id="field3"></div>
+    <div id="field4"></div>
+    <div id="field5"></div>
+    <div id="field6"></div>
+    <div id="field7"></div>
+    <div id="field8"></div>
+    <div id="field9"></div>
+  </div>
+</div>
+
+
+
+

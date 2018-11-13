@@ -1,0 +1,8 @@
+<div class="container">
+  <ul>
+    <li *ngFor="let game of savedGames" >
+       <span routerLink="/main" (click)="playSavedGame($event)" id="{{game}}">{{game}}</span>
+       <em id="{{game}}" (click)="deleteGame($event)">delete</em>
+    </li>
+  </ul>
+</div>

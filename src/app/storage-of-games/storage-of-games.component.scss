@@ -1,0 +1,21 @@
+.container{
+    margin-top: 1%;
+    width: 20%;
+    li{
+        list-style: decimal;
+    }
+    span{
+        cursor: pointer;
+    }
+    span:hover{
+        color: aquamarine
+    }
+    em{
+       position: relative;
+       float: right;
+        cursor: pointer;
+    }
+    em:hover{
+       color: rgb(226, 94, 94)
+    }
+}
